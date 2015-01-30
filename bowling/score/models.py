@@ -1,3 +1,9 @@
-from django.db import models
+class Game():
+    def __init__(self):
+        self.current_score = 0
 
-# Create your models here.
+    def roll(self, pins):
+        self.current_score += pins
+
+    def score(self):
+        return self.current_score
